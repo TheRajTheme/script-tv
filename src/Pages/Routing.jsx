@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Page from "../Components/Page";
 import Home from "./Home";
 
 const Routing = () => {
   return (
-    <Router basename="/">
+    <BrowserRouter basename="/">
       <Routes>
         <Route
           exact
@@ -17,7 +17,7 @@ const Routing = () => {
           }
         />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 
