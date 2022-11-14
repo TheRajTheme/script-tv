@@ -1,0 +1,25 @@
+@import '../../styles/helpers.scss';
+
+.headingText{
+    padding: 0 15%;
+    text-align: center;
+    .heading{
+        font-size: 50px;
+        color: $n;
+        span{
+            color: $p1;
+        }
+        @include xs{
+            font-size: 36px;
+        }
+    }
+    .para{
+        color: $p3;
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 24px;
+        @include xs{
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,228 @@
+@import "../../../styles/helpers.scss";
+
+.infra {
+  position: relative;
+  .infraWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .imgWrap {
+      position: relative;
+      margin-top: 142px;
+      margin-bottom: 142px;
+      @include xl{
+        margin-top: 96px;
+        margin-bottom: 96px;
+      }
+      img {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+      .imgTxt {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        text-align: center;
+        margin-left: 9px;
+        @include xs{
+            h3{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+            }
+            a{
+                font-size: 14px;
+            }
+        }
+      }
+      .infraCard {
+        position: absolute;
+        background-color: $p4;
+        padding: 20px 24px;
+        width: 270px;
+        border-radius: 10px;
+        color: $n;
+        h2 {
+          font-size: 22px;
+          margin-bottom: 4px;
+        }
+        p {
+          color: $p3;
+        }
+        a {
+          color: $p1;
+          font-weight: 500;
+        }
+        @media screen and (max-width: 679px) {
+            padding: 12px;
+            width: 160px;
+            h2 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 14px;
+            }
+            a {
+                font-size: 14px;
+            }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: $p4 transparent transparent transparent;
+        }
+        &:nth-child(3) {
+          top: -80px;
+          left: 0px;
+          text-align: start;
+          &::after {
+            top: 100%;
+            left: 33%;
+            margin-left: 0;
+            border-color: $p4 transparent transparent transparent;
+          }
+          @include xl {
+            top: 70px;
+            left: -260px;
+            text-align: end;
+            &::after {
+              top: 50%;
+              left: 100%;
+              margin-left: 0;
+              border-color: transparent transparent transparent $p4;
+            }
+          }
+          @media screen and (max-width: 679px) {
+            top: -75px;
+            left: 12px;
+            &::after {
+              left: 40%;
+            }
+          }
+          @include xs {
+            top: -100px;
+            &::after {
+              left: 20%;
+            }
+          }
+        }
+        &:nth-child(4) {
+          top: -80px;
+          right: 0;
+          text-align: end;
+          &::after {
+            top: 100%;
+            left: 63%;
+            margin-left: 0;
+            border-color: $p4 transparent transparent transparent;
+          }
+          @include xl {
+            top: 70px;
+            left: calc(100% - 10px);
+            text-align: start;
+            &::after {
+              top: 50%;
+              left: -10px;
+              margin-left: 0;
+              border-color: transparent $p4 transparent transparent;
+            }
+          }
+          @media screen and (max-width: 679px) {
+            top: -90px;
+            right: 12px;
+            &::after {
+              left: 50%;
+            }
+          }
+          @include xs {
+            top: -115px;
+            &::after {
+              left: 70%;
+            }
+          }
+        }
+        &:nth-child(5) {
+          bottom: -50px;
+          left: 0px;
+          text-align: start;
+          &::after {
+            top: -10px;
+            left: 33%;
+            margin-left: 0;
+            border-color: transparent transparent $p4 transparent;
+          }
+          @include xl {
+            bottom: 100px;
+            left: -260px;
+            text-align: end;
+            &::after {
+              top: 50%;
+              left: 100%;
+              margin-left: 0;
+              border-color: transparent transparent transparent $p4;
+            }
+          }
+          @media screen and (max-width: 679px) {
+            bottom: -90px;
+            left: 12px;
+            text-align: start;
+            &::after {
+              left: 33%;
+            }
+          }
+          @include xs{
+            bottom: -120px;
+            &::after {
+              left: 20%;
+            }
+          }
+        }
+        &:nth-child(6) {
+          bottom: -50px;
+          right: 0;
+          text-align: end;
+          &::after {
+            top: -10px;
+            left: 63%;
+            margin-left: 0;
+            border-color: transparent transparent $p4 transparent;
+          }
+          @include xl {
+            bottom: 100px;
+            left: calc(100% - 10px);
+            text-align: start;
+            &::after {
+              top: 50%;
+              left: -10px;
+              margin-left: 0;
+              border-color: transparent $p4 transparent transparent;
+            }
+          }
+          @media screen and (max-width: 679px) {
+            bottom: -50px;
+            right: 12px;
+            &::after {
+              left: 53%;
+            }
+          }
+          @include xs{
+            bottom: -80px;
+            &::after {
+              left: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+@import "../../../styles/helpers.scss";
+
+.hero {
+  height: auto;
+  position: relative;
+  padding-top: 105px;
+  background: url("../../../../public/home/hero-bg.png") no-repeat 0 0 / contain;
+  .row {
+    display: flex;
+    width: 100%;
+  }
+
+  .heroTxt {
+    flex: 0 0 100%;
+    margin-top: 48px;
+    h3 {
+      color: $p1;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    h1 {
+      color: $n;
+      margin-top: 24px;
+      font-weight: 600;
+      font-size: 64px;
+      span {
+        color: $p1;
+      }
+      @include xs {
+        font-size: 42px;
+      }
+    }
+    p {
+      font-size: 23px;
+      color: $p3;
+      margin-top: 24px;
+    }
+    .heroBtn {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-top: 48px;
+      a {
+        text-decoration: none;
+        @include xs {
+          font-size: 20px;
+          padding: 0 12px;
+        }
+      }
+      @include xs {
+        gap: 16px;
+      }
+    }
+    .heroSign {
+      color: $p3;
+      font-size: 22px;
+      margin-top: 24px;
+      a {
+        color: $p1;
+        text-decoration: none;
+        margin-left: 4px;
+      }
+    }
+    .heroUserRating {
+      display: flex;
+      align-items: center;
+      margin-top: 24px;
+      gap: 24px;
+      @include xs {
+        width: 16px;
+      }
+      img {
+        width: 147px;
+        object-fit: contain;
+        height: auto;
+        @include xs {
+          width: 98px;
+        }
+      }
+      .user {
+        h3 {
+          color: $n;
+          font-size: 36px;
+          font-weight: 500;
+          @include xs {
+            font-size: 24px;
+          }
+        }
+        p {
+          margin-top: 4px;
+          font-size: 22px;
+          @include xs {
+            font-size: 16px;
+          }
+        }
+      }
+      .separate {
+        background-color: #252525;
+        height: 42px;
+        width: 2px;
+        @include xs {
+          width: 2px !important;
+        }
+      }
+      .rating {
+        h3 {
+          color: $n;
+          font-size: 36px;
+          font-weight: 500;
+          @include xs {
+            font-size: 24px;
+          }
+        }
+        .stars {
+          margin-top: 4px;
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          color: $p3;
+          .star {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            @include xs {
+              font-size: 10px;
+            }
+          }
+          p {
+            margin-top: 0;
+            font-size: 22px;
+            @include xs {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    @include xl {
+      flex: 0 0 50%;
+    }
+  }
+
+  .heroImg {
+    flex: 0 0 50%;
+    margin-top: 48px;
+    position: relative;
+    display: none;
+    @include xl {
+      display: block;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      left: -55%;
+      top: -500px;
+      height: 200%;
+      width: 200%;
+      background: url("../../../../public/home/hero-right.png") no-repeat center
+        bottom / contain;
+      background-size: 100%;
+      @include xl {
+        top: -650px;
+      }
+      @include xxl {
+        top: -500px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}

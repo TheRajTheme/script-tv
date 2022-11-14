@@ -1,0 +1,41 @@
+@import '../../styles/helpers.scss';
+
+.cardWrap{
+    background-color: $p4;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 48px 20px;
+    @include xs{
+        padding: 24px 12px;
+    }
+    .icon{
+        img{
+            height: 136px;
+            width: 136px;
+            object-fit: contain;
+            @include xs{
+                height: 96px;
+                width: 96px;
+            }
+        }
+    }
+    .txt{
+        h2{
+            font-size: 40px;
+            color: $n;
+            margin-bottom: 16px;
+            @include xs{
+                font-size: 32px;
+            }
+        }
+        p{
+            color: $p5;
+            font-size: 20px;
+            @include xs{
+                font-size: 18px;
+            }
+        }
+    }
+}

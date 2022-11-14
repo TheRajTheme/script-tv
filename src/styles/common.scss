@@ -1,0 +1,47 @@
+@import './helpers.scss';
+
+.my-5{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.py-5{
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+}
+
+.mt-5{
+    margin-top: 48px;
+}
+
+.mt-6{
+    margin-top: 72px;
+}
+
+.mt-4{
+    margin-top: 24px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .col-6{
+    flex: 0 0 100%;
+    @include lg{
+        flex: 0 0 calc(50% - 12px);
+    }
+  }
+
+  .col-3{
+    flex: 0 0 100%;
+    @include sm{
+        flex: 0 0 calc(50% - 12px);
+    }
+    @include lg{
+        flex: 0 0 calc(25% - 18px);
+    }
+  }

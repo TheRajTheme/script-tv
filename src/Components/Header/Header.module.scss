@@ -1,0 +1,67 @@
+@import '../../styles/helpers.scss';
+
+.nav{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: transparent;
+    padding: 30px 0;
+    &.sticky{
+        background-color: $n1;
+        box-shadow: 2px 2px 10px 1px $p2;
+    }
+    .navWrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        .menus{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .hamburger{
+                background-color: transparent;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                color: $n;
+                font-size: 32px;
+                &.active{
+                    display: flex;
+                    z-index: 999;
+                }
+            }
+        }
+    }
+    .logo{
+        img{
+            height: 40px;
+        }
+    }
+    
+    .menu{
+        position: relative;
+        display: flex;
+        color: $n;
+        list-style: none;
+        gap: 24px;
+        &.mblMenu{
+            position: absolute;
+            flex-direction: column;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100px;
+            background-color: $n1;
+            display: none;
+            width: 100%;
+            padding: 96px 24px 24px;
+            height: 100vh;
+            top: 0;
+        }
+        &.active{
+            display: flex;
+        }
+    }
+}

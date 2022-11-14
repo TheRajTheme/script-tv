@@ -1,0 +1,70 @@
+@import "../../../styles/helpers.scss";
+
+.team {
+  position: relative;
+  margin-top: 48px;
+  .headWrapper {
+    .headImg {
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      justify-content: center;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .teamWrap {
+    margin-top: 96px;
+    color: $n;
+    .col3 {
+      @include lg {
+        flex: 0 0 calc(50% - 12px);
+      }
+      @include xl{
+          flex: 0 0 calc(25% - 18px);
+      }
+    }
+    .singleTeam {
+      display: flex;
+      gap: 8px;
+      img {
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+      }
+      .txt {
+        h2 {
+          font-size: 24px;
+          margin-bottom: 4px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.teamPartner{
+    background-color: #09090A;
+    padding: 48px 0;
+    text-align: center;
+    .row{
+        align-items: center;
+        gap: 60px;
+        .col3 {
+          @include sm {
+            flex: 0 0 calc(25% - 45px);
+          }
+          @include xs{
+              flex: 0 0 calc(50% - 30px);
+          }
+        }
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+}
