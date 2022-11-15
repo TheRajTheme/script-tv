@@ -1,0 +1,78 @@
+@import '../../styles/helpers.scss';
+
+.footer{
+    position: relative;
+    .line{
+        height: 1px;
+        width: 100%;
+        margin: 48px 0;
+        background-color: #646464;
+    }
+    .col5{
+        flex: 0 0 calc(20% - 19.2px);
+        margin-top: 24px;
+        h1{
+            font-size: 22px;
+            color: $n;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            a{
+                color: $n;
+                font-size: 18px;
+                text-decoration: none;
+            }
+        }
+        @include xs{
+            flex: 0 0 calc(50% - 12px);
+        }
+        @include md{
+            flex: 0 0 calc(25% - 18px);
+        }
+        @include lg{
+            flex: 0 0 calc(20% - 19.2px);
+        }
+    }
+    .footerBottom{
+        color: $n;
+        display: flex;
+        flex-direction: column;
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                img{
+                    height: 40px;
+                }
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        .right{
+            p{
+                font-size: 22px;
+                text-align: center;
+                margin-top: 32px;
+            }
+        }
+        @include md{
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            .left{
+                align-items: center;
+                gap: 36px;
+                justify-content: flex-start;
+            }
+            .right{
+                margin-top: 0;
+            }
+        }
+    }
+}

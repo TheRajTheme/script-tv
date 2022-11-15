@@ -1,23 +1,22 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Page from "../Components/Page";
 import Home from "./Home";
 
 const Routing = () => {
   return (
-    <BrowserRouter basename="/">
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={
+    <Router basename="/">
+      <Switch>
+      <Route
+          path=""
+          render={() => (
             <Page>
               <Home />
             </Page>
-          }
+          )}
         />
-      </Routes>
-    </BrowserRouter>
+      </Switch>
+    </Router>
   );
 };
 

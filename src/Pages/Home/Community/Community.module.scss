@@ -1,0 +1,123 @@
+@import '../../../styles/helpers.scss';
+
+.community{
+    position: relative;
+    .col4{
+        flex: 0 0 100%;
+        margin-top: 48px;
+        .headingText{
+            padding: 0;
+            p{
+                font-size: 18px;
+            }
+        }
+        .imgWrap{
+            background-color: $p1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px;
+            margin-top: 48px;
+            border-radius: 12px;
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+        @include md{
+            flex: 0 0 calc(40% - 12px);
+            .headingText{
+                text-align: start;
+            }
+        }
+    }
+    .col6{
+        flex: 0 0 100%;
+        margin-top: 48px;
+        .comWrap{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            width: 100%;
+            .comCard{
+                flex: 0 0 calc(50% - 12px);
+                background-color: $p4;
+                padding: 20px 10px;
+                border-radius: 10px;
+                color: #5F6978;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+                .icon{
+                    font-size: 20px;
+                    margin-top: 8px;
+                }
+                .txt{
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    h2{
+                        font-size: 20px;
+                        line-height: 57px;
+                    }
+                    span{
+                        font-size: 14px;
+                        margin-top: 4px;
+                    }
+                }
+                @include sm{
+                    gap: 20px;
+                    padding: 36px 20px;
+                    .icon{
+                        font-size: 30px;
+                    }
+                    .txt{
+                        h2{
+                            font-size: 30px;
+                            line-height: 63px;
+                        }
+                    }
+                }
+                @include md{
+                    gap: 12px;
+                    padding: 36px 12px;
+                    .icon{
+                        font-size: 24px;
+                    }
+                    .txt{
+                        h2{
+                            font-size: 24px;
+                            line-height: 57px;
+                        }
+                    }
+                }
+                @include lg{
+                    gap: 24px;
+                    padding: 36px 24px;
+                    .icon{
+                        font-size: 30px;
+                    }
+                    .txt{
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                        h2{
+                            font-size: 30px;
+                            line-height: 63px;
+                        }
+                    }
+                }
+                @include xl{
+                    gap: 48px;
+                    padding: 36px;
+                }
+            }
+        }
+        @include md{
+            flex: 0 0 calc(60% - 12px);
+        }
+    }
+}

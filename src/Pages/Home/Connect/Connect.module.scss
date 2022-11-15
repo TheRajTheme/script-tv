@@ -1,0 +1,81 @@
+@import '../../../styles/helpers.scss';
+
+.connect{
+    position: relative;
+    .start{
+        margin-top: 48px;
+        .headingText{
+            padding: 0;
+            text-align: start;
+            h1{
+                font-size: 84px;
+                border-bottom: 1px solid $p1;
+                padding-bottom: 24px;
+            }
+        }
+        @include md{
+            .headingText{
+                h1{
+                    font-size: 136px;
+                    padding-bottom: 24px;
+                }
+            }
+        }
+        @include lg{
+            .headingText{
+                h1{
+                    font-size: 120px;
+                    padding-bottom: 126px;
+                }
+            }
+        }
+        @include xl{
+            .headingText{
+                h1{
+                    font-size: 136px;
+                    padding-bottom: 126px;
+                }
+            }
+        }
+    }
+    .connectTxt{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        color: $n;
+        p{
+            font-size: 24px;
+            font-weight: 500;
+            span{
+                font-weight: 600;
+            }
+        }
+        a{
+            width: max-content;
+            color: $p1;
+            font-size: 24px;
+            font-weight: 400px;
+            .sign{
+                font-size: 16px;
+            }
+        }
+        .lunch{
+            color: $n1;
+            text-decoration: none;
+        }
+        @include md{
+            p{
+                font-size: 32px;
+            }
+            a{
+                font-size: 32px;
+                .sign{
+                    font-size: 18px;
+                }
+            }
+        }
+        @include lg{
+            margin-top: 48px;
+        }
+    }
+}

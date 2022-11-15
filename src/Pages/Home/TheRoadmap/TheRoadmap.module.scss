@@ -1,0 +1,68 @@
+@import '../../../styles/helpers.scss';
+
+.roadmap{
+    .itemsWrapper{
+        position: relative;
+        margin-top: 96px;
+        .roadmapItem{
+            position: relative;
+            color: $n;
+            display: flex;
+            justify-content: center;
+            .head{
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                h1{
+                    font-size: 50px;
+                    color: $p1;
+                }
+                h3{
+                    font-size: 28px;
+                    font-weight: 500;
+                }
+            }
+            .list{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 28px;
+                color: #aaaaaa;
+            }
+        }
+        button[aria-label="Go to previous slide"]{
+            background-color: #0B0B0D;
+            border-radius: 4px;
+            left: 65%;
+            top: 85%;
+            @media screen and (min-width: 400px) {
+                left: 70%;
+            }
+            @media screen and (min-width: 450px) {
+                left: 73%;
+            }
+            @media screen and (min-width: 540px) {
+                left: 77%;
+            }
+            @include md {
+                left: 82%;
+            }
+            @include lg {
+                left: 85%;
+            }
+            @include xl {
+                left: 87%;
+            }
+            @include xl {
+                left: 88%;
+            }
+        }
+        button[aria-label="Go to next slide"]{
+            background-color: #0B0B0D;
+            border-radius: 4px;
+            top: 85%;
+        }
+    }
+}

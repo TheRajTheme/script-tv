@@ -19,9 +19,27 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 575, min: 0 },
-    items: 1,
+    items: 2,
   },
 };
+
+const partnerIcon = [
+  {
+    img: './partner/1.png',
+  },
+  {
+    img: './partner/2.png',
+  },
+  {
+    img: './partner/3.png',
+  },
+  {
+    img: './partner/4.png',
+  },
+  {
+    img: './partner/5.png',
+  },
+]
 
 const PartnerCarousel = () => {
   return (
@@ -35,24 +53,11 @@ const PartnerCarousel = () => {
        itemClass={styles.itemsImg}
        containerClass={styles.itemsWrapper}
        >
-        <div>
-            <img src="./partner/1.png" alt="" />
-        </div>
-        <div>
-            <img src="./partner/2.png" alt="" />
-        </div>
-        <div>
-            <img src="./partner/3.png" alt="" />
-        </div>
-        <div>
-            <img src="./partner/4.png" alt="" />
-        </div>
-        <div>
-            <img src="./partner/5.png" alt="" />
-        </div>
-        <div>
-            <img src="./partner/6.png" alt="" />
-        </div>
+        {partnerIcon.map((x, index) => (
+          <div key={index}>
+          <img src={x.img} alt="" />
+      </div>
+        ))}
       </Carousel>
       ;
     </div>
