@@ -58,10 +58,10 @@
                 .txt{
                     display: flex;
                     align-items: center;
-                    gap: 4px;
+                    gap: 8px;
                     h2{
-                        font-size: 20px;
-                        line-height: 57px;
+                        font-size: 16px;
+                        line-height: 36px;
                     }
                     span{
                         font-size: 14px;
@@ -70,20 +70,7 @@
                 }
                 @include sm{
                     gap: 20px;
-                    padding: 36px 20px;
-                    .icon{
-                        font-size: 30px;
-                    }
-                    .txt{
-                        h2{
-                            font-size: 30px;
-                            line-height: 63px;
-                        }
-                    }
-                }
-                @include md{
-                    gap: 12px;
-                    padding: 36px 12px;
+                    padding: 28px 20px;
                     .icon{
                         font-size: 24px;
                     }
@@ -94,25 +81,38 @@
                         }
                     }
                 }
-                @include lg{
-                    gap: 24px;
-                    padding: 36px 24px;
+                @include md{
+                    gap: 12px;
+                    padding: 28px 16px;
                     .icon{
-                        font-size: 30px;
+                        font-size: 20px;
+                    }
+                    .txt{
+                        h2{
+                            font-size: 20px;
+                            line-height: 42px;
+                        }
+                    }
+                }
+                @include lg{
+                    gap: 20px;
+                    padding: 28px 20px;
+                    .icon{
+                        font-size: 24px;
                     }
                     .txt{
                         display: flex;
                         align-items: center;
                         gap: 4px;
                         h2{
-                            font-size: 30px;
-                            line-height: 63px;
+                            font-size: 24px;
+                            line-height: 57px;
                         }
                     }
                 }
                 @include xl{
-                    gap: 48px;
-                    padding: 36px;
+                    gap: 36px;
+                    padding: 28px;
                 }
             }
         }

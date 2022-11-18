@@ -15,19 +15,19 @@
     margin-top: 48px;
     h3 {
       color: $p1;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 600;
     }
     h1 {
       color: $n;
       margin-top: 24px;
       font-weight: 600;
-      font-size: 64px;
+      font-size: 54px;
       span {
         color: $p1;
       }
       @include xs {
-        font-size: 42px;
+        font-size: 36px;
       }
     }
     p {
@@ -43,7 +43,7 @@
       a {
         text-decoration: none;
         @include xs {
-          font-size: 20px;
+          font-size: 18px;
           padding: 0 12px;
         }
       }
@@ -53,7 +53,7 @@
     }
     .heroSign {
       color: $p3;
-      font-size: 22px;
+      font-size: 18px;
       margin-top: 24px;
       a {
         color: $p1;
@@ -65,7 +65,7 @@
       display: flex;
       align-items: center;
       margin-top: 24px;
-      gap: 24px;
+      gap: 20px;
       @include xs {
         width: 16px;
       }
@@ -74,23 +74,23 @@
         object-fit: contain;
         height: auto;
         @include xs {
-          width: 98px;
+          width: 90px;
         }
       }
       .user {
         h3 {
           color: $n;
-          font-size: 36px;
+          font-size: 28px;
           font-weight: 500;
           @include xs {
-            font-size: 24px;
+            font-size: 20px;
           }
         }
         p {
           margin-top: 4px;
-          font-size: 22px;
+          font-size: 18px;
           @include xs {
-            font-size: 16px;
+            font-size: 14px;
           }
         }
       }
@@ -105,10 +105,10 @@
       .rating {
         h3 {
           color: $n;
-          font-size: 36px;
+          font-size: 28px;
           font-weight: 500;
           @include xs {
-            font-size: 24px;
+            font-size: 20px;
           }
         }
         .stars {
@@ -127,9 +127,9 @@
           }
           p {
             margin-top: 0;
-            font-size: 22px;
+            font-size: 18px;
             @include xs {
-              font-size: 16px;
+              font-size: 14px;
             }
           }
         }

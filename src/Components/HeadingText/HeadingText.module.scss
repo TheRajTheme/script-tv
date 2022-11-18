@@ -4,22 +4,22 @@
     padding: 0 15%;
     text-align: center;
     .heading{
-        font-size: 50px;
+        font-size: 40px;
         color: $n;
         span{
             color: $p1;
         }
         @include xs{
-            font-size: 36px;
+            font-size: 28px;
         }
     }
     .para{
         color: $p3;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
         margin-top: 24px;
         @include xs{
-            font-size: 20px;
+            font-size: 16px;
         }
     }
     @media screen and (max-width: 991px) {
